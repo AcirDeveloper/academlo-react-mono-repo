@@ -1,34 +1,36 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Quotes from './components/Quotes'
+import Author from './components/Author'
+import data from './components/quotes.json'
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+function App() {
+	const [quotes, setquotes] = useState(Math.floor(Math.random() * data.length))
+
+	const btnRandom = () => {
+		setquotes(Math.floor(Math.random() * data.length))
+	}
+
+	/* Otra manera de hacer los colores random */
+	const colorsRandom = () => {
+		let makingColorCode = '0123456789ABCDEF'
+		let finalCode = '#'
+		for (let counter = 0; counter < 6; counter++) {
+			finalCode = finalCode + makingColorCode[Math.floor(Math.random() * 16)]
+		}
+		return finalCode
+	}
+	document.body.style = `background: ${colorsRandom()}`
+
+	return (
+		<div className='App'>
+			<div className='Card'>
+				<Quotes index={quotes} quo={data} />
+				<Author index={quotes} aut={data} btn={btnRandom} />
+			</div>
+		</div>
+	)
 }
 
 export default App
