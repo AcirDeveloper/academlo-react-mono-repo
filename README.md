@@ -24,8 +24,9 @@ npm run dev:01et
 
 <br>
 
-Sitio web: [Quotes Site](example.com) <br>
-Respoitorio: [Quotes Repo](example.com)
+Sitio web: [Quotes Site](https://comillas-app-jvc.netlify.app/) <br>
+Respoitorio: [Quotes Repo](https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/01-et-quotes-app)
+
 Instrucciones:
 
 Crea una app React
