@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Author = ({ aut, index, btn }) => {
+const Author = ({ aut, index, btn, tint }) => {
 	return (
-		<div>
+		<div style={{ color: tint }}>
 			<p>
 				{aut[index].author} <br />{' '}
 				<span>
-					<button onClick={btn}>
-						<i class='fa-solid fa-circle-chevron-right'></i>
+					<button onClick={btn} style={{ color: tint }}>
+						<i className='fa-solid fa-circle-chevron-right'></i>
 					</button>
 				</span>{' '}
 			</p>

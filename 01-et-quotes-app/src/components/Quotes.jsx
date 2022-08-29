@@ -1,15 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
 
-const Quotes = ({ quo, index }) => {
+const Quotes = ({ quo, index, tint }) => {
 	return (
-		<div>
-			<p>
-				<span>
-					<i class='fa-solid fa-quote-left'></i>
-				</span>
-				{quo[index].quote}
-			</p>
+		<div style={{ color: tint }}>
+			<div className='d-flex'>
+				<div className='quote'>
+					<span>
+						<i className='fa-solid fa-quote-left'></i>
+					</span>
+					<p>{quo[index].quote}</p>
+				</div>
+			</div>
 		</div>
 	)
 }

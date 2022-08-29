@@ -6,28 +6,22 @@ import Author from './components/Author'
 import data from './components/quotes.json'
 
 function App() {
+	const colors = ['#845EC2', '#D65DB1', '#FF6F91', '#FF9671', '#FFC75F', '#F9F871', '#B39CD0']
+	const randomColor = Math.floor(Math.random() * colors.length)
+
 	const [quotes, setquotes] = useState(Math.floor(Math.random() * data.length))
 
 	const btnRandom = () => {
 		setquotes(Math.floor(Math.random() * data.length))
 	}
 
-	/* Otra manera de hacer los colores random */
-	const colorsRandom = () => {
-		let makingColorCode = '0123456789ABCDEF'
-		let finalCode = '#'
-		for (let counter = 0; counter < 6; counter++) {
-			finalCode = finalCode + makingColorCode[Math.floor(Math.random() * 16)]
-		}
-		return finalCode
-	}
-	document.body.style = `background: ${colorsRandom()}`
+	document.body.style = `background: ${colors[randomColor]}`
 
 	return (
 		<div className='App'>
 			<div className='Card'>
-				<Quotes index={quotes} quo={data} />
-				<Author index={quotes} aut={data} btn={btnRandom} />
+				<Quotes index={quotes} quo={data} tint={colors[randomColor]} />
+				<Author index={quotes} aut={data} btn={btnRandom} tint={colors[randomColor]} />
 			</div>
 		</div>
 	)

@@ -12,8 +12,6 @@
 		"dev:00": "npm run dev --workspace=00-project-final",
 		"preview:00": "vite preview --workspace=00-project-final",
 		"dev:01t": "npm run dev --workspace=01-tmoral",
-		"dev:02t": "npm run dev --workspace=02-tmoral",
-		"dev:03t": "npm run dev --workspace=03-tmoral",
 		"dev:01et": "npm run dev --workspace=01-et-quotes-app",
 		"dev:02et": "npm run dev --workspace=02-et-weather-app",
 		"dev:03et": "npm run dev --workspace=01-et-rickandmorty-app",
