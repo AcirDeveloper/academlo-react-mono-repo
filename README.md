@@ -4,13 +4,13 @@ Repositorio de las clases, proyecto final, entregables entre otras cosas del boo
 
 - [ACADEMLO REACT MONO REPOSITORIO](#academlo-react-mono-repositorio)
   - [Como ejecutar cada proyecto](#como-ejecutar-cada-proyecto)
-  - [**ENTREGABLES**](#--entregables--)
-    - [1. **APP QUOTES**](#1---app-quotes--)
-    - [2. **APP **](#2---app---)
-    - [3. **APP **](#3---app---)
-    - [4. **APP **](#4---app---)
-    - [5. **APP **](#5---app---)
-  - [**PROYECTO FINAL**](#--proyecto-final--)
+  - [ENTREGABLES](#entregables)
+    - [1. APP QUOTES](#1-app-quotes)
+    - [2. OPEN WEATHER APP](#2-open-weather-app)
+    - [3. RICK AND MORTY API APP](#3-rick-and-morty-api-app)
+    - [4. CRUD AUTHENTICATION USERS](#4-crud-authentication-users)
+    - [5. POKEAPI](#5-pokeapi)
+  - [PROYECTO FINAL](#proyecto-final)
 
 ## Como ejecutar cada proyecto
 
@@ -28,9 +28,9 @@ npm run dev:01et
 
 <br/>
 
-## **ENTREGABLES**
+## ENTREGABLES
 
-### 1. **APP QUOTES**
+### 1. APP QUOTES
 
 Sitio web: [Quotes Site](https://comillas-app-jvc.netlify.app/) <br>
 Respoitorio: [Quotes Repo](https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/01-et-quotes-app)
@@ -57,52 +57,93 @@ Criterios de evaluación:
 
 <hr />
 
-### 2. **APP**
+### 2. OPEN WEATHER APP
 
 Sitio web: [Name Site]() <br>
 Respoitorio: [Name Repo]()
 
 <details>
 <summary>INSTRUCCIONES</summary>
+Aplicación que consuma la api de [openWeatherApp](https://openweathermap.org/) para mostrar el clima dependiendo de la ubicación del usuario
+
+- Los datos del clima dependen de la ubicación del usuario (30pts).
+- Correcto despliegue de datos: país, ciudad, icono que describa el clima, temperatura en grados centígrados. (30pts).
+- Botón que cambia de grados centígrados a fahrenheit y viceversa (30pts).
+- Código en inglés (10pts).
+
+[DEMO APP](https://amazing-williams-f62284.netlify.app/)
 
 </details>
 
 <hr />
 
-### 3. **APP**
+### 3. RICK AND MORTY API APP
 
 Sitio web: [Name Site]() <br>
 Respoitorio: [Name Repo]()
 
 <details>
 <summary>INSTRUCCIONES</summary>
+Aplicación que consuma la api de [Rick and Morty API](https://rickandmortyapi.com/documentation/) para ver y filtrar a los personajes de Rick y Morty
+
+- Ubicación aleatoria al cargar la página (10pts).
+- Correcto despliegue de información en LocationInfo: Nombre, tipo, dimensión, cantidad de residentes (20pts).
+- Listado de residentes en ResidentList (30pts).
+- Correcto despliegue de información en ResidentInfo: Nombre, status, Imagen, cantidad de episodios donde aparece y lugar de origen (10pts).
+- Correcto funcionamiento del componente SearchBox (20pts).
+- Código en inglés (10pts).
+
+[DEMO APP](https://rickymorty.netlify.app/)
 
 </details>
 
 <hr />
 
-### 4. **APP**
+### 4. CRUD AUTHENTICATION USERS
 
 Sitio web: [Name Site]() <br>
 Respoitorio: [Name Repo]()
 
 <details>
 <summary>INSTRUCCIONES</summary>
+CRUD de usuarios con autenticación usando una api creada por el instructor: [https://users-crud1.herokuapp.com/swagger](https://users-crud1.herokuapp.com/swagger)
+
+- Correcto despliegue de información en cada item de usersList: nombre, apellido, email y fecha de nacimiento (10pts).
+- Funcionalidad para eliminar usuarios (20pts).
+- Funcionalidad para seleccionar un usuario, que sus datos salgan en el formulario como referencia para poder editarlo (20pts).
+- Funcionalidad para crear usuarios en UsersForm (20pts).
+- Funcionalidad para actualizar usuarios (20pts).
+- Código en inglés (10pts).
+
+[DEMO APP](https://fervent-mccarthy-6fbd8d.netlify.app/)
 
 </details>
 
 <hr />
 
-### 5. **APP**
+### 5. POKEAPI
 
 Sitio web: [Name Site]() <br>
 Respoitorio: [Name Repo]()
 
 <details>
 <summary>INSTRUCCIONES</summary>
+Aplicación consumiendo la [pokeapi](https://pokeapi.co/) usando los conceptos de rutas y lo básico de Redux para ver y filtrar pokemones.
+
+- Las rutas /pokedex y /pokedex/:id están protegidas (10pts).
+- El nombre insertado en el input de la ruta raíz se guarda en la store de redux (10pts).
+- En /pokedex se muestra el nombre del usuario insertado anteriormente (10pts).
+- En /pokedex se listan y se paginan todos los pokemones (10pts).
+- En /pokedex cada tarjeta es un link que lleva a la ruta /pokedex/:id (15pts).
+- En /pokedex se pueden filtrar los pokemones por tipo (15pts).
+- En /pokedex hay un input para buscar un pokemon en específico (15pts).
+- En /pokedex/:id se muestra correctamente la información del pokemon seleccionado (10pts).
+- El código está en inglés (5pts).
+
+[DEMO APP](https://mypokedex101.netlify.app/)
 
 </details>
 
 <hr />
 
-## **PROYECTO FINAL**
+## PROYECTO FINAL
