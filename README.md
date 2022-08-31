@@ -2,15 +2,19 @@
 
 Repositorio de las clases, proyecto final, entregables entre otras cosas del bootcamp Academlo.
 
-- [ACADEMLO REACT MONO REPOSITORIO](#academlo-react-mono-repositorio)
-  - [Como ejecutar cada proyecto](#como-ejecutar-cada-proyecto)
-  - [ENTREGABLES](#entregables)
-    - [1. APP QUOTES](#1-app-quotes)
-    - [2. OPEN WEATHER APP](#2-open-weather-app)
-    - [3. RICK AND MORTY API APP](#3-rick-and-morty-api-app)
-    - [4. CRUD AUTHENTICATION USERS](#4-crud-authentication-users)
-    - [5. POKEAPI](#5-pokeapi)
-  - [PROYECTO FINAL](#proyecto-final)
+| TABLA DE CONTENIDO |
+| ------------------ |
+
+|[ACADEMLO REACT MONO REPOSITORIO](#academlo-react-mono-repositorio)
+
+- [Como ejecutar cada proyecto](#como-ejecutar-cada-proyecto)
+- [ENTREGABLES](#entregables)
+  - [1. APP QUOTES](#1-app-quotes)
+  - [2. OPEN WEATHER APP](#2-open-weather-app)
+  - [3. RICK AND MORTY API APP](#3-rick-and-morty-api-app)
+  - [4. CRUD AUTHENTICATION USERS](#4-crud-authentication-users)
+  - [5. POKEAPI](#5-pokeapi)
+- [PROYECTO FINAL](#proyecto-final)
 
 ## Como ejecutar cada proyecto
 
