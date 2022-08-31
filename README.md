@@ -2,11 +2,11 @@
 
 Repositorio de las clases, proyecto final, entregables entre otras cosas del bootcamp Academlo.
 
-| TABLA DE CONTENIDO |
-| ------------------ |
+**TABLA DE CONTENIDO**
 
-|[ACADEMLO REACT MONO REPOSITORIO](#academlo-react-mono-repositorio)
+---
 
+- [ACADEMLO REACT MONO REPOSITORIO](#academlo-react-mono-repositorio)
 - [Como ejecutar cada proyecto](#como-ejecutar-cada-proyecto)
 - [ENTREGABLES](#entregables)
   - [1. APP QUOTES](#1-app-quotes)
@@ -15,6 +15,8 @@ Repositorio de las clases, proyecto final, entregables entre otras cosas del boo
   - [4. CRUD AUTHENTICATION USERS](#4-crud-authentication-users)
   - [5. POKEAPI](#5-pokeapi)
 - [PROYECTO FINAL](#proyecto-final)
+
+---
 
 ## Como ejecutar cada proyecto
 
