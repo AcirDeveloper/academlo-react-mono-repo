@@ -65,8 +65,8 @@ Criterios de evaluación:
 
 ### 2. OPEN WEATHER APP
 
-Sitio web: [Cima Tacto Site]() <br>
-Respoitorio: [Cima Tacto Repo]()
+Sitio web: [Cima Tacto Site](https://climatacto.netlify.app/) <br>
+Respoitorio: [Cima Tacto Repo](https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/02-et-weather-app)
 
 <details>
 <summary>INSTRUCCIONES</summary>
