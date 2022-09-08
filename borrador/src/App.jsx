@@ -4,6 +4,7 @@ import './App.css'
 import users from './users.json'
 import Ptacticeapis from './components/Ptacticeapis'
 import Card from './components/Card'
+import SideBar from './components/Sidebar'
 
 function App() {
 	const [index, setIndex] = useState(0)
@@ -66,6 +67,7 @@ function App() {
 
 	return (
 		<>
+			<SideBar />
 			<section className='RandomUsers' style={{ background: finalCode }}>
 				<div className='App' style={{ color: finalCode }}>
 					<h2>

@@ -65,8 +65,8 @@ Criterios de evaluación:
 
 ### 2. OPEN WEATHER APP
 
-Sitio web: [Name Site]() <br>
-Respoitorio: [Name Repo]()
+Sitio web: [Cima Tacto Site]() <br>
+Respoitorio: [Cima Tacto Repo]()
 
 <details>
 <summary>INSTRUCCIONES</summary>

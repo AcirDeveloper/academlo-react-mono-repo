@@ -11,19 +11,21 @@
 		"build:00": "npm run build --workspace=00-project-final",
 		"dev:00": "npm run dev --workspace=00-project-final",
 		"preview:00": "vite preview --workspace=00-project-final",
-		"dev:01t": "npm run dev --workspace=01-tmoral",
 		"dev:01et": "npm run dev --workspace=01-et-quotes-app",
 		"build:01et": "npm run build --workspace=01-et-quotes-app",
 		"dev:02et": "npm run dev --workspace=02-et-weather-app",
 		"dev:03et": "npm run dev --workspace=01-et-rickandmorty-app",
 		"dev:04et": "npm run dev --workspace=04-et-CRUD-app",
 		"dev:05et": "npm run dev --workspace=05-et-pokeapi-app",
-		"dev:borr": "npm run dev --workspace=borrador"
+		"dev:borrador": "npm run dev --workspace=borrador",
+		"dev:borr": "npm run dev --workspace=borr"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"axios": "^0.27.2"
+		"axios": "^0.27.2",
+		"react-icons": "^4.4.0",
+		"react-router-dom": "^6.3.0"
 	}
 }
