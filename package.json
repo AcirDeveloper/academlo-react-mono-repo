@@ -31,10 +31,9 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"03-et-rickandmorty-app": "^0.0.0",
-		"axios": "^0.27.2",
-		"react-hook-dom": "^1.0.2",
-		"react-icons": "^4.4.0",
-		"react-router-dom": "^6.4.0"
+		"axios": "0.27.2",
+		"react-hook-dom": "1.0.2",
+		"react-icons": "4.4.0",
+		"react-router-dom": "6.4.0"
 	}
 }
