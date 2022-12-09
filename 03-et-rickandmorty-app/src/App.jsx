@@ -1,34 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useState, useEffect } from 'react'
+import Location from './components/Location'
+import axios from 'axios'
 import './App.css'
+import Search from './components/Search'
+import Header from './components/Header'
+import Pagination from './components/Pagination'
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [rick, setRick] = useState({})
+    const [typeLocation, setTypeLocation] = useState('')
+    const [page, setPage] = useState(1)
+    const [pages, setPages] = useState(10)
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    useEffect(() => {
+        const randomId = Math.floor(Math.random() * 125) + 1
+
+        axios.get(`https://rickandmortyapi.com/api/location/${randomId}`).then((res) => {
+            setRick(res.data)
+        })
+    }, [])
+
+    const maximo = rick.residents?.length / pages
+
+    const searchLocation = () => {
+        axios
+            .get(`https://rickandmortyapi.com/api/location/${typeLocation}`)
+            .then((res) => setRick(res.data))
+    }
+
+    return (
+        <div className='App'>
+            <Header />
+            <main className='main'>
+                <Search
+                    rickandmorty={rick}
+                    searchLocation={searchLocation}
+                    typeLocation={typeLocation}
+                    setTypeLocation={setTypeLocation}
+                />
+                <div>
+                    <ul className='rickAndMorty-container'>
+                        {rick.residents
+                            ?.slice((page - 1) * pages, (page - 1) * pages + pages)
+                            .map((resident) => (
+                                <Location url={resident} key={resident} />
+                            ))}
+                    </ul>
+                </div>
+                <Pagination page={page} setPage={setPage} maximo={maximo} />
+            </main>
+        </div>
+    )
 }
 
 export default App
