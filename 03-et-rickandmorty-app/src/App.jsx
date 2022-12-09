@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Location from './components/Location'
+// importar axios
 import axios from 'axios'
 import './App.css'
 import Search from './components/Search'
