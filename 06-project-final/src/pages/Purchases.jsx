@@ -1,0 +1,106 @@
+import React, { useEffect } from 'react'
+import { ListGroup } from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { getPurchasesThunk } from '../store/slices/purchases.slice'
+
+const Purchases = () => {
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const purchases = useSelector((state) => state.purchases)
+
+    useEffect(() => {
+        dispatch(getPurchasesThunk())
+    }, [])
+
+    const formatDate = (date) => {
+        const months = [
+            'Enero',
+            'Febrero',
+            'Marzo',
+            'Abril',
+            'Mayo',
+            'Junio',
+            'Julio',
+            'Agosto',
+            'Septiembre',
+            'Octubre',
+            'Noviembre',
+            'Diciembre',
+        ]
+        // const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
+        const newDate = new Date(date)
+        // const day = days[newDate.getDay()]
+        const day = newDate.getDate()
+        const month = months[newDate.getMonth()]
+        const year = newDate.getFullYear()
+        return `${month} ${day}, ${year}`
+    }
+
+    console.log(purchases)
+
+    return (
+        <div style={{ maxWidth: '900px', margin: '10% auto' }}>
+            <h1>Purchases</h1>
+            <hr />
+            <ListGroup>
+                {purchases.map((purchase) => {
+                    return (
+                        <ListGroup.Item
+                            onClick={() => navigate(`/purchase/${purchase.id}`)}
+                            key={purchase.id}
+                            style={{
+                                marginBottom: '20px',
+                                borderRadius: '20px',
+                                padding: '50px',
+                                backgroundColor: '#f5f5f5',
+                                border: '1px solid #e3e3e3',
+                            }}>
+                            <h5>
+                                {' '}
+                                <b>{formatDate(purchase.createdAt)}</b>{' '}
+                            </h5>
+                            <hr />
+                            {purchase.cart.products.map((product) => {
+                                return (
+                                    <div
+                                        key={product.id}
+                                        style={{
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'flex-start',
+                                            marginBottom: '20px',
+                                        }}>
+                                        <div style={{ width: '50%' }}>
+                                            <p>{product.title}</p>
+                                        </div>
+                                        <div
+                                            style={{
+                                                display: 'flex',
+                                                flexDirection: 'row',
+                                                justifyContent: 'space-around',
+                                                width: '50%',
+                                            }}>
+                                            <p
+                                                style={{
+                                                    border: '1px solid #e3e3e3',
+                                                    padding: '4px 22px',
+                                                }}>
+                                                {' '}
+                                                {product.productsInCart.quantity}{' '}
+                                            </p>
+                                            <p>$ {product.price} </p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </ListGroup.Item>
+                    )
+                })}
+            </ListGroup>
+        </div>
+    )
+}
+
+export default Purchases

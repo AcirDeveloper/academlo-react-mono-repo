@@ -1,0 +1,31 @@
+.navbar {
+    height: 60px;
+}
+
+.justify-content-end {
+    gap: 30px;
+}
+
+.colapse {
+    justify-content: flex-end !important;
+}
+
+.fa-solid {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.fa-solid span {
+    letter-spacing: 3px !important;
+    transition: all 0.5s ease;
+}
+
+.fa-solid span:hover {
+    color: #0099f1;
+    letter-spacing: 6px !important;
+    transition: all 0.5s ease;
+}
+
+.fa-solid:hover {
+    color: #0099f1;
+}

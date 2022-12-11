@@ -1,0 +1,109 @@
+/* Estilos a los buscadores */
+.buscadores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#bg-nested-dropdown:hover {
+    background: #0099f1 !important;
+}
+
+.dropdown-item:hover {
+    color: rgb(255, 255, 255);
+    background-color: #161616;
+    border-color: rgb(255, 255, 255);
+}
+
+.search-input {
+    background-color: #ffffff;
+    border-color: rgb(255, 255, 255);
+}
+
+.search-input:focus {
+    border: #0099f1 !important;
+}
+
+.search-button {
+    background-color: #161616 !important;
+    border-color: #161616 !important;
+}
+
+.search-button:hover {
+    background-color: #0099f1 !important;
+    border-color: #000000 !important;
+    color: #000;
+}
+
+i.fa-magnifying-glass {
+    color: #fff;
+}
+
+i.fa-magnifying-glass:hover {
+    color: #fff;
+}
+
+/* Estilos a las tarjetas */
+.card {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    height: 510px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-header {
+    padding: 25px !important;
+    border: none !important;
+    background: white;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    transition: all 0.5s ease;
+}
+
+.card-img:hover {
+    transform: scale(1.1);
+    background: transparent;
+    transition: all 0.5s ease;
+}
+
+.row-title {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 60px;
+}
+
+.card-body .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #161616;
+    text-align: center;
+}
+
+.btn-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn-content .btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #161616;
+    background: #ffffff;
+    margin: 25px auto !important;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s ease;
+}

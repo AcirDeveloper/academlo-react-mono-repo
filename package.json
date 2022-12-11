@@ -23,12 +23,9 @@
 		"dev:05et": "npm run dev --workspace=05-et-pokedex",
 		"build:05et": "npm run build --workspace=05-et-pokedex",
 		"preview:05et": "vite preview --workspace=05-et-pokedex",
-		"build:final": "npm run build --workspace=05-project-final",
-		"dev:final": "npm run dev --workspace=05-project-final",
-		"preview:final": "vite preview --workspace=05-project-final",
-		"dev:borr": "npm run dev --workspace=borr",
-		"dev:borrador": "npm run dev --workspace=borrador",
-		"dev:router": "npm run dev --workspace=react-router"
+		"build:final": "npm run build --workspace=06-project-final",
+		"dev:final": "npm run dev --workspace=06-project-final",
+		"preview:final": "vite preview --workspace=06-project-final"
 	},
 	"keywords": [],
 	"author": "",
