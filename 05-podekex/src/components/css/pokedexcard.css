@@ -1,0 +1,385 @@
+.card {
+	display: flex;
+	width: 250px;
+	height: 290px;
+	border-radius: 15px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	-webkit-box-shadow: -24px 23px 21px -16px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: -24px 23px 21px -16px rgba(0, 0, 0, 0.22);
+	box-shadow: -24px 23px 21px -16px rgba(0, 0, 0, 0.22);
+}
+
+.card img {
+	height: 100px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.pokeimage {
+	margin-top: calc(100% - 55px);
+	margin-left: calc(250px - 100%);
+}
+
+.btnhome {
+	font-size: 30px;
+	color: #eee;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: rgb(0 0 0);
+	padding: 10px;
+	position: fixed;
+	bottom: 670px;
+	right: 50px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+	z-index: 10;
+	opacity: 100%;
+}
+
+.btnhome:hover {
+	background-color: #2c2fa5;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+	z-index: 10;
+}
+
+.application-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin: 0 auto;
+	background: aliceblue;
+	opacity: 80%;
+	padding: 10px;
+}
+
+.pokeinfo {
+	padding: 15px;
+}
+
+.pokeinfo h1 {
+	font-size: 26px;
+	color: var(--text-color);
+	width: 150%;
+}
+
+.pokeinfo p {
+	font-size: 16px;
+}
+
+.cont-pokeinfo {
+	padding: 30px;
+	text-transform: capitalize;
+}
+
+.cont-pokeinfo div {
+	border-radius: 15px;
+}
+
+.cont-pokeinfo_logo {
+	justify-content: start;
+	margin: 0px auto;
+}
+
+.logo {
+	width: 400px;
+	height: auto;
+}
+
+.detail {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: var(--text-color);
+}
+
+.returndetail {
+	padding-top: 5px;
+	padding-left: 1px;
+	font-size: 40px;
+	color: rgb(15, 15, 45);
+	text-align: left;
+}
+
+.hw {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.hw b {
+	font-size: 30px;
+	color: black;
+}
+
+.hw p {
+	font-size: 20px;
+	color: var(--text-color-second);
+}
+
+.number-name {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.number-name b {
+	border: 1px solid var(--text-color-second);
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.number-name hr {
+	background-color: var(--text-color-second);
+	margin-left: 0%;
+	width: 70%;
+	margin-top: 60px;
+	height: 1px;
+}
+
+.cont-pokeinfo_header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	width: 68%;
+	height: auto;
+}
+
+.frame {
+	background-color: var(--bg-color);
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.frame div img {
+	margin-top: calc(55px - 20%);
+	width: 300px;
+}
+
+.type-abilities {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 15px;
+	gap: 20px;
+	width: 100%;
+	height: auto;
+}
+
+.type {
+	background-color: var(--bg-color);
+	padding: 8px;
+	width: 100%;
+	align-items: center;
+}
+
+.type p {
+	border: 1px solid var(--text-color-second);
+	border-radius: 5px;
+	padding: 8px 20px;
+	width: 50%;
+}
+
+.abilities {
+	background-color: var(--bg-color);
+	padding: 8px;
+	width: 100%;
+	align-items: center;
+}
+
+.abilities p {
+	border: 1px solid var(--text-color-second);
+	border-radius: 5px;
+	padding: 8px 20px;
+	width: 50%;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	text-align: center;
+	align-items: center;
+}
+
+.scroll-bg {
+	background-color: var(--bg-color);
+	width: 100%;
+	padding: 10px 20px;
+}
+
+.scroll-div {
+	height: 400px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.scroll-object {
+	padding: 20px;
+}
+
+.scroll-object div {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.scroll-object div p {
+	border: 1px solid var(--text-color-second);
+	padding: 8px 20px;
+	border-radius: 10px;
+	box-shadow: 8px 8px 2px rgb(108, 105, 105);
+	color: black;
+}
+
+.scroll-object h2,
+h1 {
+	color: black;
+}
+
+.scroll-object div p:hover {
+	transform: scale(1);
+	box-shadow: none;
+}
+
+.rigth {
+	display: flex;
+	flex-direction: column;
+	width: 28%;
+	height: auto;
+}
+
+.rigth-img-bg {
+	background-color: var(--bg-color);
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 10px;
+	opacity: 95%;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.rigth-img-bg .gif {
+	width: 100px;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	margin: 10% auto;
+}
+
+.rigth-img-bg img {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	height: auto;
+	/* cover */
+	object-fit: cover;
+}
+
+.stats {
+	background-color: var(--bg-color);
+	width: 100%;
+	height: 100%;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+.stats-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.up {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.down {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.stats-bg {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+
+.outer {
+	height: 160px;
+	width: 160px;
+	padding: 20px;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+	border-radius: 50% !important;
+}
+
+.inner {
+	height: 120px;
+	width: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+		inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 0.7),
+		0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+	border-radius: 50% !important;
+}
+
+#number {
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: #555;
+}
+
+circle {
+	stroke: url(#GradienColor);
+	stroke-width: 20px;
+	fill: none;
+	stroke-dasharray: 450;
+	stroke-dashoffset: 450;
+	animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+	100% {
+		stroke-dashoffset: 125.5;
+	}
+}
+
+.svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
