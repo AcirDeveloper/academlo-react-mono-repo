@@ -14,7 +14,10 @@ const Author = ({ aut, index, onSelectNextQuote, tint }) => {
   return (
     <div style={{ color: tint }}>
       <p className='author'>
-        <span className='autor_name'>{aut[index].author}</span>
+        <div style={{ display: 'flex', gap: '5px' }}>
+          <span style={{ fontSize: '18px' }}>✒️</span>
+          <span className='autor_name'>{aut[index].author}</span>
+        </div>
         <button
           onClick={onSelectNextQuote}
           onMouseEnter={handleShowTooltip}

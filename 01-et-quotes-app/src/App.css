@@ -26,7 +26,7 @@
 }
 
 .d-flex .quote {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   display: flex;
   flex-direction: row;
@@ -42,7 +42,7 @@
 .autor_name {
   font-family: 'Caveat', cursive !important;
   font-style: italic;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 svg {
