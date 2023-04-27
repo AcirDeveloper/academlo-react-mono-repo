@@ -41,7 +41,7 @@ npm run dev:01et
 Sitio web: [Quotes Site](https://comillas-app-jvc.netlify.app/) <br>
 Respoitorio: [Quotes Repo](https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/01-et-quotes-app)
 
-<details>
+<!-- <details>
 <summary>INSTRUCCIONES</summary>
 Crea una app React
 
@@ -59,7 +59,7 @@ Criterios de evaluación:
 3. Al hacer clic en el botón, cambia el color de fondo, las letras y los íconos. Todos deben ser del mismo color (30pts).
 4. El componente QuoteBox está centrado (10pts).
 5. El código está en inglés (10pts).
-</details>
+</details> -->
 
 <hr />
 

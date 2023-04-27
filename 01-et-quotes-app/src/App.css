@@ -1,27 +1,87 @@
 #root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .Card {
-	background: white;
-	/* width: 700px;
-	height: 150px; */
-	padding: 15px;
-	margin: 0 auto;
-	color: #000;
-	border-radius: 15px;
-	box-shadow: 6px 9px 18px 2px rgba(0, 0, 0, 0.67);
-	-webkit-box-shadow: 6px 9px 18px 2px rgba(0, 0, 0, 0.67);
-	-moz-box-shadow: 6px 9px 18px 2px rgba(0, 0, 0, 0.67);
+  background: white;
+  padding: 20px;
+  margin: 0 auto;
+  color: #000;
+  border-radius: 15px;
+  box-shadow: 6px 9px 18px 2px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 6px 9px 18px 2px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 6px 9px 18px 2px rgba(0, 0, 0, 0.67);
 }
 
 .d-flex {
-	display: flex;
+  display: flex;
+  flex-direction: row;
 }
 
 .d-flex div {
-	padding: 0 10px;
+  padding: 0 10px;
+}
+
+.d-flex .quote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.autor_name {
+  font-family: 'Caveat', cursive !important;
+  font-style: italic;
+  font-size: 18px;
+}
+
+svg {
+  height: 20px !important;
+  width: 20px !important;
+  margin: 0 5px;
+}
+
+.autor_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  background: transparent !important;
+  border: none;
+  font-size: 26px;
+}
+
+.fa-quote-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.1rem;
+  padding: 0 1rem 0 0;
+}
+
+.autor_btn .tooltip-text {
+  font-family: 'Caveat', cursive !important;
+  display: none;
+  position: absolute;
+  transform: translateX(-70%);
+  padding: 8px;
+  background-color: transparent;
+  color: #000000;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.autor_btn:hover .tooltip-text {
+  display: block;
 }
