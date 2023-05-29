@@ -24,17 +24,17 @@ npm run dev:05et    // Proyecto 5: PokeAPI
 
 A continuación, se detallan los proyectos incluidos en este monorepo:
 
-### 1. APP QUOTES
+### 1. QUOTES
 
-Sitio web: [https://quotes-app-acirdev.netlify.app/](https://quotes-app-acirdev.netlify.app/) <br>
-Repositorio: [https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/01-et-quotes-app](https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/01-et-quotes-app)
+Sitio web: [Frases Famosas](https://quotes-app-acirdev.netlify.app/) <br>
+Repositorio: [Frases Famosas](https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/01-et-quotes-app)
 
-### 2. OPEN WEATHER APP
+### 2. OPEN WEATHER
 
-Sitio web: [https://climatacto.netlify.app/](https://climatacto.netlify.app/) <br>
-Repositorio: [https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/02-et-weather-app](https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/02-et-weather-app)
+Sitio web: [OPEN WEATHER](https://climatacto.netlify.app/) <br>
+Repositorio: [OPEN WEATHER](https://github.com/AcirDeveloper/academlo-react-mono-repo/tree/main/02-et-weather-app)
 
-### 3. RICK AND MORTY API APP
+### 3. RICK AND MORTY API
 
 Sitio web: [Por definir]() <br>
 Repositorio: [Por definir]()
